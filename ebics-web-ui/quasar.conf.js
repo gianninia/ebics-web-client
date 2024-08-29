@@ -64,7 +64,7 @@ module.exports = configure(function (ctx) {
         API_URL: undefined,
         AUTH_TYPE: 'SSO',
         //Simulates SSO in with statically given HTTP basic credentials (only by AuthenticationType.SSO for dev purposes)
-        AUTH_TYPE_SSO_OVER_BASIC: 'yes'
+        AUTH_TYPE_SSO_OVER_BASIC: 'no'
       },
       vueRouterMode: 'hash', // available values: 'hash', 'history'
 
@@ -72,7 +72,7 @@ module.exports = configure(function (ctx) {
       //minify: true,
       uglifyOptions: {
         format: {
-          ascii_only: true // This fixing  wrong transpiled unicode chars in regex from sace.js 
+          ascii_only: true // This fixing  wrong transpiled unicode chars in regex from sace.js
         }
       },
 

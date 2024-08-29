@@ -11,6 +11,11 @@ ebics:
   locale:
     language: "en"
 spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          public-key-location: file:./jwt-public-key.pub
   jpa:
     hibernate:
       #In order to stop spring boot from maintaining DB updates (done by liquibase itself)
